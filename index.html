@@ -21,20 +21,22 @@
         </ul>
           </div>
       </div>
+
       <div class="form-contact">
         <h3>Email Us</h3>
-        <form action="">
+        <form action="https://api.web3forms.com/submit" method="POST"">
+          <input type="hidden" name="apikey" value="7f710a16-bf41-41b8-8ee3-039a91adb0a2">
           <p>
             <label for="">name</label>
-            <input type="text" name="name">
+            <input type="text" name="name" required>
           </p>
           <p>
             <label for="">company</label>
-            <input type="text" name="company">
+            <input type="text" name="company" required>
           </p>
           <p>
             <label for="">email address</label>
-            <input type="email" name="email">
+            <input type="email" name="email" required>
           </p>
           <p>
             <label for="">phone number</label>
@@ -42,11 +44,12 @@
           </p>
           <p class="message-full">
             <label for="">message</label>
-            <textarea name="message"></textarea>
+            <textarea name="message" required></textarea>
           </p>
           <p class="message-full">
             <button>Submit</button>
           </p>
+          <input type="hidden" name="redirect" value="https://craig-burton-web.github.io/pagesTest/pages/success.html">
         </form>
       </div>
     </div>
